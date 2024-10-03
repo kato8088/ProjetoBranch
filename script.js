@@ -27,8 +27,31 @@ while (w<5);
 function ola(nome){
     //string literal (crase ``) ou template string (${}), chama a variável
     console.log(`seja bem vindo, ${nome}`);
-    alert(`Seja bem vindo ${nome}`);
+  //  alert(`Seja bem vindo ${nome}`);
     document.write(`seja bem vindo ${nome}`);
 }
 
-ola("sergiu"); 
+ola("jose"); 
+
+// arrow function (=> eh igual a escrever "function")
+
+const hello=()=>(console.log("funcao arrow function"));
+
+hello();
+
+// array [], objeto {} e metodos ()
+
+let jogadores = [
+    {nome: "Huguinho", idade:17},
+    {nome: "Zezinho", idade:18},
+    {nome: "Luizinho", idade:19}
+]
+
+// map() eh um metodo de percorrer, bem parecido com for
+let listarJogadores = jogadores.map(function(item){
+    //return item.idade;
+    return item;
+
+});
+
+console.log(listarJogadores);
